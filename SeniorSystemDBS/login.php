@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css" integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
-    <link rel="stylesheet" href="/SeniorSystemDBS/css/style.css">
+    <link rel="stylesheet" href="/DB31Project/SeniorSystemDBS/css/style.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                         <div class="row gx-5 align-items-center">
                             <div class="col">
                                 <div class="p-3">
-                                    <img class="imageFront" src="/SeniorSystemDBS/image/seniorFrontLogin.png" alt="">
+                                    <img class="imageFront" src="/DB31Project/SeniorSystemDBS/image/seniorFrontLogin.png" alt="">
                                 </div>
                             </div>
                             <div class="col">
