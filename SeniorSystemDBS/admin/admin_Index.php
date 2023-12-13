@@ -21,11 +21,12 @@
             background-color: #2EC4B6;
         }
         .main{
-            background: url(wallpaper.webp);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: antiquewhite;
             height: 100vh;
-            margin-left: 0;
-            background-size: cover;
-            background-repeat: no-repeat;
+            width: 100%;
         }
         .sidenavbar {
             height: 100%;
@@ -42,9 +43,10 @@
         }
         .sidenavbar a{
             color: #2EC4B6;
-            line-height: 60px;
+            line-height: 40px;
             font-size: 20px;
-            text-align: center;
+            text-align: left;
+            margin-left: 15%;
             display: block;
             float: inline-start;
             overflow-x: hidden;
@@ -164,10 +166,11 @@
             width: 100%;
             height: 100%;
             background-color: #CBF3F0;
+            position: absolute;
         }
         img {
             max-width: 100%;
-            width: 10%;
+            width: 9%;
             background-color: black;
             border-radius: 50%;
             margin-top: 1%;
@@ -207,17 +210,51 @@
             margin-top: 1%;
         }
         .info{
-            margin-left: 18%;
-            margin-top: -9%;
+            margin-left: 16%;
+            margin-top: -8%;
             width: 40%;
             height: 16%;
+        }
+        .deceasedlist{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin-top: 50%;
         }
         .deceasedlistContent{
             width: 100%;
             height: 100%;
-            background-color: #2EC4B6;
-            position: absolute;
-            margin-top: 50%;
+            background-color: antiquewhite;
+        }
+        .mainContent{
+            width: 90%;
+            height: 80%;
+            margin-top: 3%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 3%;
+        }
+        .card{
+            width: 25%;
+            height: 20%;
+            background-color: #FFBF69;
+            border-radius: 5%;
+            margin-top: -20%;
+        }
+        h3{
+            margin: 5%;
+
+        }
+        .btn{
+            padding: 3%;
+            width: 40%;
+            background-color: #FFBF69;
+            margin-left: 3%;
+        }
+        .btn:hover{
+            background-color: #ffdfb4;
         }
     </style>
     <div id="navbar" class="sidenavbar">
@@ -226,76 +263,25 @@
         <br><br>
         <a href="javascript:void(0)" class="closebtn" onclick="closeBtn()">&times;</a>
         <a href="#">Home</a>
-  		<a href="#masterlist">Master List</a>
-        <a href="#deceasedlist">Deceased List</a>
-        <a href="#payout">Payout</a>
+        <a href="senior_registration.php">Registration</a>
+  		<a href="masterlist.php">Master List</a>
+        <a href="deceasedlist.php">Deceased List</a>
+        <a href="../admin/payout_transaction.php">Payout</a>
+        <a href="list_of_id.php">IDs</a>
         <a href="#signout">Sign out</a>
     </div>
     <span style="position:absolute;margin:20px;color:#FFAF43;font-size:30px;cursor:pointer" onclick="openBtn()">&#9776;</span>
 
     <section class="about" id="about">
         <div class="main">
-            
+            <div class="mainContent">
+                <div class="card"><h3>Total of all senior citizen: </h3></div>
+                <div class="card"><h3>Total of all deceased senior: </h3></div>
+
         </div>
+        </div>
+        
     </section>
 
-    <section class="masterlist" id="masterlist">
-        <div class="masterlistContent">
-        <div class="imglogo">
-                        <img src="/DB31Project/SeniorSystemDBS/image/logo2.png" alt="">
-                    </div>
-                    <div class="info">Republic of the Philippinges <br>
-                        City of Cebu <br> <b>OFFICE OF THE MAYOR</b><br>
-                        <b>Elderly Friendly Management System</b><br>
-                        Exevutive Building, Cebu City Hall, Cebu City   Tel #: 123-4567
-                    </div>
-                    <hr>
-                    <div class="title">Master List of Senior Citizen <br> Cebu City</div>
-            <div class="tableb">
-            
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Last name</th>
-                            <th>First name</th>
-                            <th>Middle name</th>
-                            <th>Date of Birth</th>
-                            <th>Address</th>
-                        <tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Labra</td>
-                            <td>Cindy Mae</td>
-                            <td></td>
-                            <td>04-04-2002</td>
-                            <td>142 - b Spolarium St. Duljo Fatima</td>
-                        </tr>
-                        <tr>
-                            <td>Abelgas</td>
-                            <td>Ariel</td>
-                            <td>Piodena</td>
-                            <td>24-08-1998</td>
-                            <td>37 A Andres Abellana Ext.</td>
-                        </tr>
-                        <tr>
-                            <td>Jayme</td>
-                            <td>Sophia Brielle</td>
-                            <td>Enolba</td>
-                            <td>11-11-2012</td>
-                            <td>142 - b Spolarium St. Duljo Fatima</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="deceasedlist" id="deceasedlist">
-        <div class="deceasedlistContent">
-            deceasedlist
-        </div>
-    </section>
 </body>
 </html>  
