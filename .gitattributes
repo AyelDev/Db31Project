@@ -1,4 +1,1 @@
-*.hack linguist-language=PHP
-*.hh linguist-language=PHP
-*.hhi linguist-language=PHP
-*.php.hack linguist-language=PHP
+*.php linguist-language=PHP
